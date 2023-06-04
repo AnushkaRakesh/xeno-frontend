@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ContactForm from "./Contact";
-import "./App.css"; 
+import "./App.css";
 import googleLogo from "./googleLogo.svg";
 
 function App() {
@@ -38,19 +38,24 @@ function App() {
     // </div>
 
     <div className="app">
-    {user ? (
-      <div className="container">
-        <h1 className="welcome">Welcome, {user.name}</h1>
-        <ContactForm user={user} />
-      </div>
-    ) : (
-      <div>
-        <h1 className="login-prompt">Login to view all user contacts  </h1>
-        <img src={googleLogo} alt="Google Logo" className="google-logo" />
-        <a className="login-link" href="http://localhost:4000/auth/google">Login with Google</a>
-      </div>
-    )}
-  </div>
+      {user ? (
+        <div className="container">
+          <h1 className="welcome">Welcome, {user.name}</h1>
+          <ContactForm user={user} />
+        </div>
+      ) : (
+        <div>
+          <h1 className="login-prompt">Login to view all user contacts </h1>
+          <img src={googleLogo} alt="Google Logo" className="google-logo" />
+          <a
+            className="login-link"
+            href="https://zealous-pantsuit-dog.cyclic.app/auth/google"
+          >
+            Login with Google
+          </a>
+        </div>
+      )}
+    </div>
   );
 }
 
