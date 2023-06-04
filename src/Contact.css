@@ -1,0 +1,48 @@
+.contact-form-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    border-radius:5px;
+  }
+
+  .contact-item {
+    margin-bottom: 10px;
+  }
+  
+  .edit-button,
+  .delete-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .form-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form button[type='submit'] {
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .confirm-contact{
+    justify-content: center;
+    text-align: center;
+  }
